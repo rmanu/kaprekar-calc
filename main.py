@@ -31,5 +31,8 @@ digits = split_number(num)
 diff = diff_value(max_value(digits), min_value(digits), counter)
 while (diff != 6174):
     counter+=1
+    if counter > 7:
+        print(f"Counter overshoot")
+        break;
     digits = split_number(diff)
     diff = diff_value(max_value(digits), min_value(digits), counter)
